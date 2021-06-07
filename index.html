@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <button id="addnote" onclick="newNote()"><i class="fas fa-plus-circle"></i></button>
+
+    <div class="content">
+        <template>
+            <div id="note" class="resizable">
+
+                <div id="noteheader" class="lilheader">
+                    <button onclick="this.parentElement.parentElement.remove()" class="close"><i class="fa fa-close"></i></button>
+                </div>
+                
+                <textarea id="notetext" class="liltext"></textarea>
+                
+                <div class="resizers">
+                    <div class='resizer top-left'></div>
+                    <div class='resizer top-right'></div>
+                    <div class='resizer bottom-left'></div>
+                    <div class='resizer bottom-right'></div>
+                </div>
+            </div>
+        </template>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/f3573ed0c9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
