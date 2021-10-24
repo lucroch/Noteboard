@@ -6,4 +6,4 @@ My first ever project, made solely with HTML, CSS and JavaScript.
 
 # Features
 
-* Drag n' drop resizable windows
+* Drag n' drop resizable windows and pictures
